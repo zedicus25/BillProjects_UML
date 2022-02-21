@@ -47,9 +47,9 @@ string c_Bill::toString()
 	res += "Serial number: " + std::to_string(this->serialNumber) + "\n";
 	res += "Currency: " + this->currency + "\n";
 	res += "Country: " + this->country + "\n";
-	res += "Size: " + this->getSize() + "\n";
+	res += "Size: " + this->getSize();
 	res += "Wear: " + std::to_string(this->wear) + "\n";
-	return string();
+	return res;
 }
 
 string c_Bill::getSize()
